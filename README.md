@@ -11,7 +11,7 @@
 
 İstanbul'daki emlak şirketleri için ücretsiz, SEO dostu ve mobil uyumlu web sitesi şablonu. Bootstrap 5 ile geliştirildi, birkaç saniyede klonlayıp çalıştırabilirsiniz!
 
-**🌐 Demo**: [https://ak-hosting.github.io/ak-emlak](https://ak-hosting.github.io/ak-emlak)  
+**🌐 Demo**: [https://ak-hosting.github.io/ak-emlak](https://ak-hosting.github.io/ak-emlak) *(GitHub Pages aktifleştirildikten sonra)*  
 **📦 Download**: [https://github.com/ak-hosting/ak-emlak/archive/main.zip](https://github.com/ak-hosting/ak-emlak/archive/main.zip)  
 **⭐ Star**: [https://github.com/ak-hosting/ak-emlak](https://github.com/ak-hosting/ak-emlak)  
 **📧 Destek**: [ak@ak-pro.com](mailto:ak@ak-pro.com)
@@ -55,6 +55,19 @@
 ![İletişim](assets/images/screenshot-contact.png)
 
 ## 🛠️ Kurulum
+
+### 0. GitHub Pages Kurulumu (İlk Kez)
+GitHub Pages'i aktifleştirmek için:
+
+1. **GitHub Repository'ye gidin**: [https://github.com/ak-hosting/ak-emlak](https://github.com/ak-hosting/ak-emlak)
+2. **Settings** sekmesine tıklayın
+3. **Pages** bölümünü bulun (sol menüde)
+4. **Source** kısmında **"Deploy from a branch"** seçin
+5. **Branch** olarak **"gh-pages"** seçin
+6. **Save** butonuna tıklayın
+7. **Actions** sekmesinden deployment durumunu takip edin
+
+**Not**: İlk deployment 2-5 dakika sürebilir.
 
 ### 1. Depoyu Klonlayın
 ```bash
