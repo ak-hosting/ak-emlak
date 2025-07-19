@@ -1,0 +1,53 @@
+{
+  "name": "ak-emlak",
+  "version": "1.0.0",
+  "description": "İstanbul Emlak Web Sitesi Şablonu - Ücretsiz ve Açık Kaynak",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -p 8000",
+    "dev": "serve . -p 8000",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "emlak",
+    "istanbul",
+    "real-estate",
+    "bootstrap",
+    "html5",
+    "css3",
+    "javascript",
+    "responsive",
+    "seo",
+    "turkish",
+    "template",
+    "free",
+    "open-source"
+  ],
+  "author": {
+    "name": "a.koc",
+    "email": "ak@ak-pro.com",
+    "url": "https://github.com/ak-hosting"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ak-hosting/ak-emlak.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ak-hosting/ak-emlak/issues"
+  },
+  "homepage": "https://ak-hosting.github.io/ak-emlak",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
