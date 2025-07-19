@@ -409,6 +409,9 @@ body {
 /* Footer Stilleri */
 footer {
     margin-top: 3rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 3rem 0 1rem;
 }
 
 footer h5 {
@@ -422,6 +425,7 @@ footer ul li {
 }
 
 footer ul li a {
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -432,6 +436,15 @@ footer ul li a:hover {
 
 .footer-contact p {
     margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer .text-white {
+    color: white !important;
 }
 
 /* Responsive Tasarım */
