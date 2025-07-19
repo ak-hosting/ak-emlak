@@ -1,6 +1,9 @@
-# AK Emlak - İstanbul Emlak Web Sitesi Şablonu
+# 🏠 AK Emlak - İstanbul Emlak Web Sitesi Şablonu
 
-![AK Emlak](https://img.shields.io/badge/AK-Emlak-blue?style=for-the-badge&logo=home)
+[![GitHub stars](https://img.shields.io/github/stars/ak-hosting/ak-emlak)](https://github.com/ak-hosting/ak-emlak/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ak-hosting/ak-emlak)](https://github.com/ak-hosting/ak-emlak/network)
+[![GitHub issues](https://img.shields.io/github/issues/ak-hosting/ak-emlak)](https://github.com/ak-hosting/ak-emlak/issues)
+[![GitHub license](https://img.shields.io/github/license/ak-hosting/ak-emlak)](https://github.com/ak-hosting/ak-emlak/blob/main/LICENSE)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3?style=for-the-badge&logo=bootstrap)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -8,7 +11,10 @@
 
 İstanbul'daki emlak şirketleri için ücretsiz, SEO dostu ve mobil uyumlu web sitesi şablonu. Bootstrap 5 ile geliştirildi, birkaç saniyede klonlayıp çalıştırabilirsiniz!
 
-**[Canlı Demoyu Görün](https://ak-hosting.github.io/ak-emlak/)** | **[Destek için İletişime Geçin](mailto:ak@ak-pro.com)**
+**🌐 Demo**: [https://ak-hosting.github.io/ak-emlak](https://ak-hosting.github.io/ak-emlak)  
+**📦 Download**: [https://github.com/ak-hosting/ak-emlak/archive/main.zip](https://github.com/ak-hosting/ak-emlak/archive/main.zip)  
+**⭐ Star**: [https://github.com/ak-hosting/ak-emlak](https://github.com/ak-hosting/ak-emlak)  
+**📧 Destek**: [ak@ak-pro.com](mailto:ak@ak-pro.com)
 
 ## 🚀 Özellikler
 
@@ -52,7 +58,12 @@
 
 ### 1. Depoyu Klonlayın
 ```bash
+# HTTPS ile
 git clone https://github.com/ak-hosting/ak-emlak.git
+cd ak-emlak
+
+# SSH ile (SSH key'iniz varsa)
+git clone git@github.com:ak-hosting/ak-emlak.git
 cd ak-emlak
 ```
 
@@ -78,7 +89,19 @@ FROM_EMAIL=your-email@gmail.com
 TO_EMAIL=info@yourbusiness.com
 ```
 
-### 4. Yerel Sunucuda Çalıştırın
+### 4. Docker ile Çalıştırın (Önerilen)
+```bash
+# Docker Compose ile
+docker-compose up -d
+
+# Veya sadece web uygulaması
+docker build -t ak-emlak .
+docker run -d -p 8082:80 --name ak-emlak-web ak-emlak
+```
+
+Tarayıcıda `http://localhost:8082` adresine gidin.
+
+### 5. Yerel Sunucuda Çalıştırın
 ```bash
 # Python ile
 python -m http.server 8000
@@ -219,7 +242,8 @@ function getPropertyData(propertyId) {
 ## 📞 Destek ve İletişim
 
 ### Ücretsiz Destek
-- **GitHub Issues**: [Sorun bildirin](https://github.com/ak-hosting/ak-emlak/issues)
+- **GitHub Issues**: [https://github.com/ak-hosting/ak-emlak/issues](https://github.com/ak-hosting/ak-emlak/issues)
+- **GitHub Discussions**: [https://github.com/ak-hosting/ak-emlak/discussions](https://github.com/ak-hosting/ak-emlak/discussions)
 - **E-posta**: ak@ak-pro.com
 - **Dokümantasyon**: [CUSTOMIZATION.md](CUSTOMIZATION.md)
 
@@ -252,11 +276,20 @@ Bu şablonu kullanıyorsanız, lütfen footer'da şu ibareyi ekleyin:
 
 ## 🤝 Katkıda Bulunma
 
-1. Bu depoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
+Bu projeye katkıda bulunmak istiyorsanız:
+
+1. **Fork yapın**: [https://github.com/ak-hosting/ak-emlak/fork](https://github.com/ak-hosting/ak-emlak/fork)
+2. **Branch oluşturun**: `git checkout -b feature/yeni-ozellik`
+3. **Değişiklikleri commit edin**: `git commit -am 'Yeni özellik eklendi'`
+4. **Push edin**: `git push origin feature/yeni-ozellik`
+5. **Pull Request oluşturun**: [https://github.com/ak-hosting/ak-emlak/pulls](https://github.com/ak-hosting/ak-emlak/pulls)
+
+### Katkı Türleri
+- 🐛 Bug düzeltmeleri
+- ✨ Yeni özellikler
+- 📝 Dokümantasyon iyileştirmeleri
+- 🎨 UI/UX iyileştirmeleri
+- 🔧 Performans optimizasyonları
 
 ## 📊 Performans
 
