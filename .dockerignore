@@ -1,0 +1,166 @@
+# AK Emlak - Docker Ignore Dosyası
+# Docker build sırasında hariç tutulacak dosyalar
+
+# ===========================================
+# GIT DOSYALARI
+# ===========================================
+.git
+.gitignore
+.gitattributes
+
+# ===========================================
+# DOCKER DOSYALARI
+# ===========================================
+Dockerfile
+docker-compose.yml
+.dockerignore
+docker-compose.override.yml
+
+# ===========================================
+# DOKÜMANTASYON
+# ===========================================
+README.md
+CUSTOMIZATION.md
+LICENSE
+*.md
+
+# ===========================================
+# GELİŞTİRME DOSYALARI
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# ===========================================
+# IDE VE EDITÖR
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# ===========================================
+# SİSTEM DOSYALARI
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================================
+# LOG DOSYALARI
+# ===========================================
+*.log
+logs/
+log/
+
+# ===========================================
+# GEÇİCİ DOSYALAR
+# ===========================================
+*.tmp
+*.temp
+*.cache
+.cache/
+.temp/
+
+# ===========================================
+# BUILD DOSYALARI
+# ===========================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# ===========================================
+# TEST DOSYALARI
+# ===========================================
+coverage/
+.nyc_output/
+*.lcov
+test/
+tests/
+__tests__/
+
+# ===========================================
+# BACKUP DOSYALARI
+# ===========================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===========================================
+# SIKIŞTIRILMIŞ DOSYALAR
+# ===========================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# HASSAS DOSYALAR
+# ===========================================
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+api-keys.txt
+passwords.txt
+
+# ===========================================
+# EMLAK PROJESİNE ÖZEL
+# ===========================================
+# Geliştirici notları
+dev-notes.txt
+todo.txt
+
+# Yerel yapılandırma dosyaları
+config.local.js
+settings.local.json
+
+# Test görselleri
+test-images/
+sample-images/
+
+# Geçici emlak verileri
+temp-properties.json
+draft-properties.json
+
+# ===========================================
+# PERFORMANS
+# ===========================================
+# Büyük dosyalar
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# ===========================================
+# NOTLAR
+# ===========================================
+# Bu dosya, Docker build sırasında gereksiz dosyaları
+# hariç tutmak için kullanılır.
+# 
+# Önemli: Hassas dosyalar (.env, secrets.json vb.) 
+# asla Docker image'ına dahil edilmemelidir!
+# 
+# E-posta: ak@ak-pro.com
+# GitHub: https://github.com/ak-hosting 

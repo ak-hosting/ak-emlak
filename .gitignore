@@ -1,0 +1,143 @@
+# AK Emlak - Git Ignore Dosyası
+
+# ===========================================
+# HASSAS DOSYALAR
+# ===========================================
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ===========================================
+# SİSTEM DOSYALARI
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================================
+# IDE VE EDITÖR DOSYALARI
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# ===========================================
+# NODE.JS DOSYALARI
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# ===========================================
+# LOG DOSYALARI
+# ===========================================
+*.log
+logs/
+log/
+
+# ===========================================
+# GEÇİCİ DOSYALAR
+# ===========================================
+*.tmp
+*.temp
+*.cache
+.cache/
+.temp/
+
+# ===========================================
+# BUILD VE DIST DOSYALARI
+# ===========================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# ===========================================
+# TEST DOSYALARI
+# ===========================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ===========================================
+# BACKUP DOSYALARI
+# ===========================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===========================================
+# SIKIŞTIRILMIŞ DOSYALAR
+# ===========================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# EMLAK PROJESİNE ÖZEL
+# ===========================================
+# Geliştirici notları
+dev-notes.txt
+todo.txt
+
+# Yerel yapılandırma dosyaları
+config.local.js
+settings.local.json
+
+# Test görselleri
+test-images/
+sample-images/
+
+# Geçici emlak verileri
+temp-properties.json
+draft-properties.json
+
+# ===========================================
+# GÜVENLİK
+# ===========================================
+# Şifreler ve API anahtarları
+secrets.json
+api-keys.txt
+passwords.txt
+
+# ===========================================
+# PERFORMANS
+# ===========================================
+# Büyük dosyalar
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# ===========================================
+# NOTLAR
+# ===========================================
+# Bu dosya, hassas bilgileri ve gereksiz dosyaları
+# Git deposundan hariç tutmak için kullanılır.
+# 
+# Önemli: .env dosyası asla GitHub'a yüklenmemelidir!
+# 
+# E-posta: ak@ak-pro.com
+# GitHub: https://github.com/ak-hosting 
