@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   deploy:
@@ -14,29 +12,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        
-    - name: Install dependencies
-      run: |
-        npm install -g serve
-        
-    - name: Build and test
-      run: |
-        # Test if the site builds correctly
-        echo "Testing site build..."
-        
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: .
         publish_branch: gh-pages
-        force_orphan: true
-        
-    - name: Deploy to GitHub Pages (Alternative)
-      if: github.ref == 'refs/heads/main'
-      uses: actions/deploy-pages@v4 
+        force_orphan: true 
